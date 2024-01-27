@@ -1,0 +1,107 @@
+:root {
+    --green: #278227;
+    --white: #FFFFFF;
+    --black: #000000;
+    --grey: #808080;
+    --darkGreen: #006400;
+  }
+
+/* Main menu */
+body {
+    height: 125vh;
+    margin-top: 80px;
+    padding: 30 px;
+    background-size: cover;
+    background: var(--bg);
+    color: var(--fontColor);
+    font-family: helvetica;
+    margin: 0;
+    background-image: url(img/maxresdefault.jpeg);
+    background-repeat: no-repeat;
+}
+
+header{
+    position: fixed;
+left: 0;
+right: 0;
+top: 5px;
+height: 30px;
+display: flex;
+align-items: center;
+box-shadow: 0 0 25px 0 black;
+}
+
+header*{
+    display: inline;
+
+}
+header li a{
+    color: white;
+text-decoration: none;
+}
+
+
+li{
+    list-style: circle;
+    display: inline;
+    --fontcolor:var(--black);
+    --bg:var(var(--green));
+}
+
+.list {
+    list-style: square;
+}
+
+
+.light-theme{
+    --bg:var(--green);
+    --fontColor:var(--white);
+    --btnBg:var(--black);
+    --btnFontColor:var(--green);
+    --hoverColor:var(--darkGreen);
+}
+.dark-theme{
+    --bg:var(--black);
+    --fontColor:var(--green);
+    --btnBg:var(--green);
+    --btnFontColor:var(--black);
+    --hoverColor: var(--grey)
+}
+
+
+
+.btn{
+    position: absolute;
+    top: 20px;
+    left: 400px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+
+.nav{
+    font-size: x-large;
+
+}
+
+.nav a{
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    background-color: var(--hoverColor);
+    overflow: hidden;
+    display: flex;
+  }
+
+  .nav a:hover{
+    background-color: var(--hoverColor);
+    color: black;
+  }
+/* Profile pic */
+.profile-pic{
+    width: 500px;
+    height: auto;
+}
